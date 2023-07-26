@@ -17,24 +17,25 @@ body {
     justify-content: start;
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 
 .container {
-  min-width: 600px;
+  width: 600px;
   min-height: 100vh;
   padding: 2rem;
   background-color: #f8f8f8;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 
 @media screen and (max-width: 646px){
   body{
-    display: block;
+    /* display: block; */
   }
 
   .container {
-    width: 300px;
-    padding: .5rem;
+    width: 100%;
+    padding: .25rem;
+    padding-top: 1rem;
   }
 }

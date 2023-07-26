@@ -5,11 +5,7 @@ import './item.css';
 import Features from './Features';
 import AddItems from './AddItem';
 
-export default function Items({
-    tasksData,
-    setTasksData,
-    handleClear,
-}) {
+export default function Items({ tasksData, setTasksData, handleClear }) {
     // useStates, useRefs HOOKS
     const [isBeAdded, setIsBeAdded] = useState(false);
     const [isBeDeleted, setIsBeDeleted] = useState(false);
@@ -18,6 +14,7 @@ export default function Items({
 
     // Normal Variables
     let sortTasksData = [...tasksData];
+    const border = { border: '1px solid #8e44ad' };
 
     // Hnadle Funcitons
     function handleDeleteTask(id) {
@@ -78,7 +75,10 @@ export default function Items({
                     </Message>
                 )}
                 <AddItems onAddTasks={setTasksData} />
-                <div className="items">
+                <div
+                    className={`items`}
+                    style={tasksData.length > 0 ? border : {}}
+                >
                     <ul>
                         {sortTasksData.map((currEl) => (
                             <Item

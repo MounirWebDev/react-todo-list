@@ -21,12 +21,6 @@ export default function Features({ onSort, onClear, setSort, sort }) {
                             Sort by completed tasks
                         </option>
                     </select>
-                    <input
-                        type="submit"
-                        className="clearBtn btn"
-                        value="Sort"
-                        // onClick={(e) => onSort(e, sort)}
-                    />
                 </div>
 
                 <div className="clearContainer">

@@ -14,3 +14,13 @@ header h1 {
 header h1:hover{
     letter-spacing: 4px;
 }
+
+@media screen and (max-width: 646px){
+    header{
+        margin-bottom: 50px;
+    }
+    
+    header h1{
+        font-size: 35px;
+    }
+}
