@@ -1,0 +1,241 @@
+main {
+    padding: 1rem;
+    border: 1px solid #6c5ce7;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+
+section {
+    width: 100%;
+}
+
+.message,
+.message.empty {
+    padding: 10px;
+    margin-bottom: 10px;
+    color: #ffffff;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.message.empty {
+    padding: 10px;
+    margin-bottom: 10px;
+    color: #f8f8f8;
+    background-color: #f8f8f8;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.add {
+    background-color: #2ecc71;
+    animation: addMessage 2s ease;
+}
+
+@keyframes addMessage {
+    0%,
+    100% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+}
+
+.delete {
+    background-color: #e74c3c;
+    animation: deleteMessage 0.3s linear;
+}
+
+@keyframes deleteMessage {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.complited {
+    background-color: #00b894;
+}
+
+.myFormContainer,
+.featuresContainer,
+.items {
+    padding: 1rem;
+    margin-bottom: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+.myForm,
+.featuresForm {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.myForm.newTaskName {
+    margin-block: 10px;
+}
+
+.taskInput {
+    padding: 10px;
+    width: 300px;
+    border: 2px solid #6c5ce7;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.taskInput:focus {
+    outline: none;
+}
+
+.btn {
+    background-color: #6c5ce7;
+    color: #ffffff;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: 1px solid;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.btn:hover {
+    border: 1px solid #6c5ce7;
+    background-color: #8e44ad;
+}
+
+.btn:focus {
+    outline: none;
+}
+
+select {
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    border: 2px solid #6c5ce7;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #ffffff;
+    color: #333333;
+}
+
+.featuresForm {
+    align-items: start;
+}
+
+select:focus {
+    outline: none;
+}
+
+select::after {
+    content: '\25BC';
+    margin-left: 8px;
+}
+
+ul {
+    width: 100%;
+    height: 300px;
+    list-style: none;
+    overflow-y: auto;
+}
+
+/* Track */
+ul::-webkit-scrollbar {
+    width: 8px; /* Width of the scrollbar track */
+}
+
+ul::-webkit-scrollbar-thumb {
+    background-color: #888; /* Color of the scrollbar handle */
+    border-radius: 4px; /* Rounded corners for the handle */
+}
+
+ul::-webkit-scrollbar-thumb:hover {
+    background-color: #555; /* Color of the scrollbar handle on hover */
+}
+
+.todoTask {
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #6c5ce7; /* Violet */
+    border-radius: 5px;
+    margin-bottom: 10px;
+    background-color: #ffffff; /* White */
+    color: #333333; /* Dark Gray */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    animation: todo 0.7s linear;
+}
+
+@keyframes todo {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.completedTask {
+    background-color: #00b894;
+    border-color: #00b894;
+    color: #ffffff;
+    animation: complete 0.1s linear;
+}
+
+.completed {
+    text-decoration: line-through;
+}
+
+.delete-button {
+    background-color: #e84393;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.delete-button:hover {
+    background-color: #ff6bcb;
+}
+
+.complete-button {
+    background-color: #00b894;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.complete-button:hover {
+    background-color: #33d9b2;
+}
+
+.completedBtn {
+    background-color: #2ecc71;
+}
+
+.icon {
+    margin-inline: 0.5rem;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 646px) {
+    main {
+        padding: 1rem;
+        border: 1px solid #6c5ce7;
+        border-radius: 5px;
+        /* display: flex;
+      
